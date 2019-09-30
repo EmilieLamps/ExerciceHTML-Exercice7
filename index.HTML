@@ -6,30 +6,30 @@
     <title>Exercice 7</title>
   </head>
   <body>
-    <form metod="post" action="traitement php">
+    <form metod="post" action="traitement.php">
       <fieldset class="bloc1">
         <legend class="bloc1">Votre identité</legend>
         <ol>
-          <li> <label>Nom</label> : <input type="text" value="Nom"/></li>
-          <li><label>Prénom</label> : <input type="text" value="Prénom"/></li>
-          <li><label>Adresse mail</label> : <input type="text" value="Adresse mail"/></li>
+          <li> <label>Nom</label> : <input type="text" placeholder="Exemple : Dupont"/></li>
+          <li><label>Prénom</label> : <input type="text" placeholder="Exemple : Jean" required/></li>
+          <li><label>Adresse mail</label> : <input type="text" placeholder="Exemple : jeandupont@gmail.com" required /></li>
         </ol>
       </fieldset>
       <fieldset class="bloc2">
         <legend class="bloc2">Adresse de livraison</legend>
         <ol>
-          <li><label>Adresse</label> : <textarea name="Adresse" rows="5" cols="20"/></textarea></li>
-          <li><label>Code postal</label> : <input type="text" value="Code postal"/></li>
-          <li><label>Ville</label> : <input type="text" value="Ville"/></li>
+          <li><label>Adresse</label> : <textarea name="Adresse" rows="5" cols="20" placeholder="Exemple : Avenue des Champs Elysée" required ></textarea></li>
+          <li><label>Code postal</label> : <input type="text" placeholder="Exemple : 75000" required /></li>
+          <li><label>Ville</label> : <input type="text" placeholder="Exemple : Paris" required /></li>
         </ol>
       </fieldset>
       <fieldset class="bloc3">
         <legend class="bloc3">Informations de règlement</legend>
         <ol>
           <li><label>Type de carte bancaire</label>
-            <ul>
-              <li>Visa</li>
-              <li>Mastercard</li>
+
+              <p><input type="radio" name"Visa" />Visa</p>
+              <p><input type="radio" name"Mastercard" />Mastercard</p>
             </ul>
           <li><label>Numéro de carte</label> : <input type="text" value="Numéro de carte"/></li>
           <li><label>Code de sécurité</label> : <input type="text" value="Code de sécurité"/></li>
